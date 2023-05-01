@@ -3,7 +3,14 @@
 // For example, for [1, 2, 2] it should return 9 
 
 function squareSum(numbers){
-    return numbers.length ? numbers.reduce((a, b) => a  + b ** 2 ) : 0
+    let sum = 0
+    numbers.forEach(n => sum += n ** 2 ) 
+    return sum
 
 }
-console.log(squareSum([1, 2, 2]))
+console.log(squareSum([-19,2,4,0,-17,-5,13]))
+
+
+// 864
+
+
